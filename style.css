@@ -32,6 +32,11 @@ body{
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      font-size: 3rem;
 }
+@media(max-width:950px){
+    .header_logo{
+        font-size: 1.5rem;
+    }
+}
 .header_container{
     display: flex;
     justify-content: end;
@@ -44,11 +49,18 @@ body{
     /* border: 2px solid black; */
 }
 .loginsection{
+    background-color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width: 20vw;
     /* border: 2px solid black; */
+}
+@media(max-width:950px){
+    .loginsection{
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 .login{
     font-family: Arial, Helvetica, sans-serif;
@@ -56,11 +68,11 @@ body{
     border: 2px solid rgb(108, 103, 103);
     background-color: rgb(255, 255, 255);
     border-radius: 0.6rem;
-    padding: 0.4rem 1rem 0.4rem 1rem;
+    padding: 0.3rem 0.90rem 0.3rem 0.90rem;
     color: black;
+    font-size: 1rem;
     transition-duration: 0.5s;
-    transition-timing-function: cubic-bezier(0, 1.42, 0.99, 0.71)
-
+    transition-timing-function:ease-in-out;
 }
 .login:hover{
     transform: scale(1.1);
@@ -71,12 +83,34 @@ body{
 .signup{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-    border: 2px solid rgb(176, 171, 171);
     background-color: rgb(176, 171, 171);
     border-radius: 0.6rem;
+    border: 2px solid rgb(176, 171, 171);
     padding: 0.4rem 1rem 0.4rem 1rem;
     transition-duration: 0.5s;
-    transition-timing-function: cubic-bezier(0, 1.42, 0.99, 0.71)
+    transition-timing-function:ease-in-out;
+}
+@media(max-width:950px){
+    .login{
+        padding: 0.3rem 0.90rem 0.3rem 0.90rem;
+        font-size: 0.80rem;
+    }
+    .signup{
+        padding: 0.3rem 0.90rem 0.3rem 0.90rem;
+        font-size: 0.80rem;
+        font-weight: 700;
+    }
+}
+@media(max-width:600px){
+    .login{
+        padding: 0.3rem 0.90rem 0.3rem 0.90rem;
+        font-size: 0.60rem;
+    }
+    .signup{
+        padding: 0.3rem 0.90rem 0.3rem 0.90rem;
+        font-size: 0.60rem;
+        font-weight: 700;
+    }
 }
 .signup:hover{
     transform: scale(1.1);
@@ -88,9 +122,19 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 1rem;
 }
+@media(max-width:950px){
+    .header_title{
+        font-size: 2rem;
+    }
+}
 .header_description{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
+}
+@media(max-width:950px){
+    .header_description{
+        font-size: 0.7rem;
+    }
 }
 /********* Main Content ********/
 .main_container{
